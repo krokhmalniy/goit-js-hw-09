@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+ul.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li.gallery-item {
+  height: 200px;
+}
+
+img.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+img.gallery-image:hover {
+  transform: scale(1.04);
+}
+
+/* Стрілки попередня/наступна */
+.sl-prev,
+.sl-next,
+.sl-close,
+.sl-counter {
+  color: #FFFFFF !important;
+}
+
+.sl-wrapper {
+background-color: rgba(46, 47, 66, 0.8);
+}
